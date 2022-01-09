@@ -1,0 +1,29 @@
+{
+  "name": "conventional-oauth-demo-client",
+  "version": "1.0.0",
+  "description": "A sample application showing conventional oauth",
+  "main": "index.js",
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.15.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsrsasign": "^8.0.12",
+    "nodemon": "^2.0.15",
+    "qs": "^6.9.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0",
+    "sync-request": "^6.1.0",
+    "underscore": "^1.9.1",
+    "underscore.string": "^3.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client":"nodemon client.js",
+    "authz":"nodemon authorizationServer.js",
+    "resserv":"nodemon protectedResource.js"
+  },
+  "author": "",
+  "license": ""
+}

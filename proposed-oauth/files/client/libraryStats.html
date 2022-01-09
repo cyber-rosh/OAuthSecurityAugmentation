@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Globalmantics</title>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <link href="css/style-home.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="images/G.png"/>
+
+<style>
+    .header {
+      padding-bottom: 60px;
+    }
+    .navbar-inverse {
+      background-color: #223;
+    }
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<header>
+	    <div class="container">
+		    <div class="logo col-md-5 col-sm-5 col-xs-8">
+                <a href="index.html"><h1>Proposed Oauth </h1></a><span class="text">Proposed OAuth flow</span>
+			</div>
+			<div class="mobile-togle col-md-12 col-sm-12 col-xs-12">
+        <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+  <button type="button" id="hamburger" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#navbar-collapse-x">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="#top"></a>
+  </div>
+
+  </nav>
+  			</div>
+
+  			<div class="right_section col-md-5 col-xs-12">
+  			<div class="search">
+  			      <button type="submit"><i class="fa fa-search"></i></button> <input type="text" class="form-control" placeholder="Search">
+  				</div>
+
+
+
+  		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+
+     </nav>
+     </div>
+
+     <div class="sign-in col-md-2">
+     <span class="dvider"></span>
+     <div class="sign">
+    <a>Sign-in</a>
+
+     </div>
+
+     </div>
+
+  		</div>
+    </header>
+
+    <div class="container">
+
+      <div class="jumbotron">
+		  
+		  <h2>LibraryStats Stats API</h2>
+		  
+		  <p>Current scope:<span class="label label-info"><%- scope %></span></p>
+		
+		  <p>Number of Visits:</p>
+		  <ul> 
+				<li><%- data.visits %>
+		  </ul>
+		  <p>Years of Membership:</p>
+		  <ul>
+				<li><%- data.membershipTime %>
+		  </ul>
+		  <p>Average Time Spent In Library:</p>
+		  <ul>
+				<li><%- data.averageTimeSpentInLibrary %>
+		  </ul>
+		  
+		  <a href="/libraryStats" class="btn btn-default">Get Library Stats</a>
+		  
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+<footer>
+<div class="container">
+<div class="main-footer col-md-12 col-xs-12">
+<div class="foter-logo col-md-3 col-sm-3 col-xs-2">
+<a href="index.html"><h1>Proposed Oauth2</h1>
+    </a>
+</div>
+
+</div>
+</div><!---container-->
+<div class="video-sec col-md-4 col-sm-12 col-xs-12">
+<h1 class="video-heading text-center">OAuth2</h1>
+<span class="border"></span>
+<p class="footer-p">This site is created for demonstrative purposes only <p>
+
+
+
+
+</div>
+
+
+	</footer>
+
+
+
+
+
+
+
+
+</div><!---------- End of Wrapper ----------->
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+jQuery(document).ready(function(){
+
+ // alert("wow");
+  //  jQuery("header").addClass("fixed");
+  jQuery("#hamburger").click(function(){
+		//alert("The paragraph was clicked.");
+		jQuery("header").toggleClass("fixed");
+	});
+
+
+});
+
+</script>
+
+</body>
+</html>
